@@ -1,0 +1,74 @@
+[
+   {
+      "id": 1,
+      "image": "https://i.ibb.co/QKhBkc3/pexels-photo-8460101.jpg",
+      "name": "Cardiology",
+      "description": "Cardiology is a branch of medicine that deals with the disorders of the heart as well as some parts of the circulatory system. The field includes medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology."
+   },
+   {
+      "id": 2,
+      "image": "https://i.ibb.co/S5k678R/pexels-photo-6129237.jpg",
+      "name": "Urology",
+      "description": "Urology, also known as genitourinary surgery, is the branch of medicine that focuses on surgical and medical diseases of the male and female urinary-tract system and the male reproductive organs."
+   },
+   {
+      "id": 3,
+      "image": "https://i.ibb.co/Qj0FQtC/pexels-photo-4226219.jpg",
+      "name": "Neurology",
+      "description": "Neurology is a branch of medicine dealing with disorders of the nervous system. Neurology deals with the diagnosis and treatment of all categories of conditions and disease involving the central and peripheral nervous systems, including their coverings, blood vessels, and all effector tissue, such as muscle."
+   },
+   {
+      "id": 4,
+      "image": "https://i.ibb.co/0KfLtth/pexels-photo-4506214.jpg",
+      "name": "Orthopaedics",
+      "description": "Orthopedic surgery or orthopedics, is the branch of surgery concerned with conditions involving the musculoskeletal system. Orthopedic surgeons use both surgical and nonsurgical means to treat musculoskeletal trauma, spine diseases, sports injuries, degenerative diseases, infections, tumors, and congenital disorders."
+   },
+   {
+      "id": 5,
+      "image": "https://i.ibb.co/6JRnbVc/gastritis-stomach-pain.jpg",
+      "name": "Gastroenterology",
+      "description": "Gastroenterology is the branch of medicine focused on the digestive system and its disorders. Diseases affecting the gastrointestinal tract, which include the organs from mouth into anus, along the alimentary canal, are the focus of this speciality. Physicians practicing in this field are called gastroenterologists."
+   },
+   {
+      "id": 6,
+      "image": "https://i.ibb.co/z4d1ssZ/pexels-photo-5434017.jpg",
+      "name": "Dentistry",
+      "description": "Dentistry, also known as dental medicine and oral medicine, is a branch of medicine that consists of the study, diagnosis, prevention, and treatment of diseases, disorders, and conditions of the oral"
+   },
+   {
+      "id": 7,
+      "image": "https://i.ibb.co/2nrLYRY/pexels-photo-2324837.jpg",
+      "name": "Gynaecology",
+      "description": "Gynaecology or gynecology is the medical practice dealing with the health of the female reproductive system. Almost all modern gynaecologists are also obstetricians. In many areas, the specialities of gynaecology and obstetrics overlap. The term means the science of women."
+   },
+   {
+      "id": 8,
+      "image": "https://i.ibb.co/fYgSFSS/pexels-photo-163944.jpg",
+      "name": "Medicine",
+      "description": "Medicine is the science and practice of caring for a patient, managing the diagnosis, prognosis, prevention, treatment, palliation of their injury or disease, and promoting their health."
+   },
+   {
+      "id": 9,
+      "image": "https://i.ibb.co/ZXLK7BT/pexels-photo-4101140.jpg",
+      "name": "Psychology",
+      "description": "Psychology is the science of mind and behavior. Psychology includes the study of conscious and unconscious phenomena, including feelings and thoughts. It is an academic discipline of immense scope, crossing the boundaries between the natural and social sciences."
+   },
+   {
+      "id": 10,
+      "image": "https://i.ibb.co/b2ZvKQB/kidney-failure-stages.jpg",
+      "name": "Kidney failure",
+      "description": "Kidney failure, also called end-stage renal disease (ESRD), is the last stage of chronic kidney disease. When your kidneys fail, it means they have stopped working well enough for you to survive without dialysis or a kidney transplant"
+   },
+   {
+      "id": 11,
+      "image": "https://i.ibb.co/pxkw464/pexels-photo-3760043.jpg",
+      "name": "Stroke",
+      "description": "A stroke is a serious life-threatening medical condition that happens when the blood supply to part of the brain is cut off. Strokes are a medical emergency and urgent treatment is essential. The sooner a person receives treatment for a stroke, the less damage is likely to happen."
+   },
+   {
+      "id": 12,
+      "image": "https://i.ibb.co/gZGjq0K/pexels-photo-853457.jpg",
+      "name": "Glaucoma",
+      "description": "Glaucoma is a common eye condition where the optic nerve, which connects the eye to the brain, becomes damaged. It's usually caused by fluid building up in the front part of the eye, which increases pressure inside the eye. Glaucoma can lead to loss of vision if it's not diagnosed and treated early."
+   }
+]
