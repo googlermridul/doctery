@@ -9,6 +9,7 @@ import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import ServicePage from './components/ServicePage/ServicePage';
 import About from './components/About/About';
 import Login from './components/Login/Login';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
         <Route path="/login">
           <Login />
         </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
         <Route path="*">
           <NotFound />
         </Route>
@@ -43,3 +47,7 @@ function App() {
 }
 
 export default App;
+
+
+// https://github.com/Programming-Hero-Web-Course3/healthcare-related-website-googlermridul
+// https://docteryyy.web.app/

@@ -7,7 +7,7 @@ const Header = () => {
    const {user, logOut} = useFirebase()
 
    return (
-      <nav className="navbar navbar-expand-md fixed-top">
+      <nav className="navbar navbar-expand-md fixed-top shadow">
          <div className="container">
             <Link className="link" to="/home">
                <h3 className="logo">Doctery</h3>
