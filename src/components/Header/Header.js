@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useFirebase from '../../hooks/useFirebase';
 import hamburger from '../../images/menu2.png'
 
 const Header = () => {
+   const {user, logOut} = useFirebase()
+
    return (
       <nav className="navbar navbar-expand-md fixed-top">
          <div className="container">
@@ -25,6 +28,18 @@ const Header = () => {
                   </li>
                   <li className="nav-item">
                      <Link className="link" to="/contact">CONTACT</Link>
+                  </li>
+                  <li className="nav-item">
+                     {
+                        user.email ? 
+                        <button onClick={logOut} className="btn btn-primary btn-sm">LOGOUT</button> : 
+                        <Link className="link" to="/login">LOGIN</Link>
+                     }
+                  </li>
+                  <li className="nav-item">
+                     {
+                        user.email && <span>{user.displayName}</span>
+                     }
                   </li>
                </ul>
             </div>
