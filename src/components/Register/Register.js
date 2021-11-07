@@ -3,8 +3,8 @@ import { useLocation, useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
-const Login = () => {
-   const {signInWithGoogle, setUser, setError, signInWithEmail, getEmail, getPassword, error} = useAuth()
+const Register = () => {
+   const {signInWithGoogle, setUser, error, setError, signUpWithEmail, getEmail, getPassword} = useAuth()
    const location = useLocation()
    const history = useHistory()
    const redirectUrl = location.state?.from || '/'
@@ -21,13 +21,15 @@ const Login = () => {
       });
    }
 
-   const handleSignIn = (e) => {
+   const handleRegistration = (e) => {
       e.preventDefault();
 
-      signInWithEmail()
+      signUpWithEmail()
       .then(res => {
          setUser(res.user)
-         history.push(redirectUrl)
+         setError('User created successfully')
+         history.push('/login')
+         console.log(res.user);
       })
       .catch(err => {
          setError(err.message);
@@ -37,8 +39,8 @@ const Login = () => {
 
    return (
       <div className="container mt-5 pt-5">
-         <h1>LOGIN HERE</h1>
-         <form onSubmit={handleSignIn}>
+         <h1>REGISTER HERE</h1>
+         <form onSubmit={handleRegistration}>
             <div className="mb-3">
                <label htmlFor="email" className="form-label">Email</label>
                <input onBlur={getEmail} type="email" className="form-control" id="email" aria-describedby="emailHelp" />
@@ -52,9 +54,9 @@ const Login = () => {
          <br />
          <p className="text-danger">{error}</p>
          <button onClick={handleGoogleSignIn} className="btn btn-primary mb-5">SIGN IN WITH GOOGLE</button>
-         <p>New user? <Link to="/register">Register</Link></p>
+         <p>Already an user? <Link to="/login">Login</Link></p>
       </div>
    );
 };
 
-export default Login;
+export default Register;
