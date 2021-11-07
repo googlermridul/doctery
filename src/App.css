@@ -9,8 +9,12 @@ body {
   font-family: 'Teko', sans-serif !important;
   font-size: 20px;
 }
-
-
+.form-control:focus {
+  background-color: #fff;
+  border-color: none !important;
+  outline: 0;
+  box-shadow: 0 0 0 0rem rgb(47, 45, 82) !important;
+}
 .link {
   text-decoration: none;
   font-size: 20px;
@@ -55,6 +59,11 @@ body {
   letter-spacing: 1px;
   transition: .4s;
   font-size: 20px;
+}
+.navbar .nav-item span {
+  text-transform: uppercase;
+  color: #2196f3;
+  font-weight: 500;
 }
 .navbar .nav-item button {
   border: none;
@@ -272,6 +281,76 @@ body {
 
 /* ================================================================ */
 
+.login {
+  background: #fff;
+}
+.login-bg {
+  background: url(./images/overlay2.png);
+  background-position: top left;
+  background-size: cover;
+  padding: 200px 0 100px 0;
+  overflow: hidden;
+}
+.login .login-box h2 {
+  font-size: 50px;
+  color: #273238;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.login .login-box {
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  width: 500px;
+  margin: auto;
+}
+.login .login-box hr {
+  background-color: #999;
+}
+.login .login-box form {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.login .login-box .form-group {
+  margin-bottom: 30px;
+}
+.login .login-box .form-control {
+  border: none;
+  color: #333;
+  font-size: 20px;
+  height: 60px;
+  border-radius: 30px;
+  padding: 30px;
+}
+.login .login-box .form-control:focus {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.login .login-box .universal-btn {
+  font-weight: 500;
+  height: 60px;
+  width: 100%;
+}
+.login .login-box .google-btn {
+  background: #fff;
+  color: #273238;
+  font-weight: 500;
+  height: 60px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.login .login-box .google-btn img {
+  padding-right: 5px;
+}
+.login .login-box .switcher {
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
+
+/* ================================================================ */
+
 .contact {
   background: #fff;
 }
@@ -313,20 +392,28 @@ body {
   border-radius: 30px;
   padding: 30px;
 }
+.contact .form-group input {
+  border: none;
+  color: #333;
+  font-size: 20px;
+  height: 60px;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.contact .form-group input:focus {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
 .contact .form-group textarea {
   color: #333;
   font-size: 20px;
   height: 180px;
   border-radius: 30px;
   padding: 30px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  border: none;
 }
 
-.form-control:focus {
-  background-color: #fff;
-  border-color: none !important;
-  outline: 0;
-  box-shadow: 0 0 0 0rem rgb(47, 45, 82) !important;
-}
 
 .submit-btn {
   background: #2f2d52;

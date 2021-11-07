@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-import hamburger from '../../images/menu2.png'
+import hamburger from '../../images/menu.png'
 
 const Header = () => {
    const {user, logOut} = useAuth()

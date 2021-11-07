@@ -2,9 +2,10 @@ import React from 'react';
 import { useLocation, useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import googleIcon from '../../images/google1.png'
 
 const Register = () => {
-   const {signInWithGoogle, setUser, error, setError, signUpWithEmail, getEmail, getPassword} = useAuth()
+   const {signInWithGoogle, setUser, error, setError, signUpWithEmail, getEmail, getPassword, getName, updateUserName} = useAuth()
    const location = useLocation()
    const history = useHistory()
    const redirectUrl = location.state?.from || '/'
@@ -27,9 +28,8 @@ const Register = () => {
       signUpWithEmail()
       .then(res => {
          setUser(res.user)
-         setError('User created successfully')
-         history.push('/login')
-         console.log(res.user);
+         updateUserName()
+         history.push(redirectUrl)
       })
       .catch(err => {
          setError(err.message);
@@ -38,23 +38,36 @@ const Register = () => {
    }
 
    return (
-      <div className="container mt-5 pt-5">
-         <h1>REGISTER HERE</h1>
-         <form onSubmit={handleRegistration}>
-            <div className="mb-3">
-               <label htmlFor="email" className="form-label">Email</label>
-               <input onBlur={getEmail} type="email" className="form-control" id="email" aria-describedby="emailHelp" />
+      <div className="login">
+         <div className="login-bg">
+            <div className="container">
+               <div className="row">
+                  <div className="col">
+                     <div className="login-box shadow">
+                        <h2>Sign in to Doctery</h2>
+                        <form onSubmit={handleRegistration}>
+                           <div className="form-group">
+                              <input onBlur={getName} type="name" className="form-control shadow" placeholder="Full Name" required />
+                           </div>
+                           <div className="form-group">
+                              <input onBlur={getEmail} type="email" className="form-control shadow" placeholder="Email" required />
+                           </div>
+                           <div className="form-group">
+                              <input onBlur={getPassword} type="password" className="form-control shadow" id="password"  placeholder="Password" required />
+                           </div>
+                           <button type="submit" className="universal-btn">Submit</button>
+                        </form>
+                        <hr />
+                        <div className="text-center">
+                           <p className="text-danger">{error}</p>
+                           <button onClick={handleGoogleSignIn} className="universal-btn google-btn shadow"><img src={googleIcon} alt="" /> Signin With Google</button>
+                           <p className="switcher">Already an user? <Link to="/login">Login</Link></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div className="mb-3">
-               <label htmlFor="password" className="form-label">Password</label>
-               <input onBlur={getPassword} type="password" className="form-control" id="password" />
-            </div>
-            <button type="submit" className="universal-btn">Submit</button>
-         </form>
-         <br />
-         <p className="text-danger">{error}</p>
-         <button onClick={handleGoogleSignIn} className="btn btn-primary mb-5">SIGN IN WITH GOOGLE</button>
-         <p>Already an user? <Link to="/login">Login</Link></p>
+         </div>
       </div>
    );
 };

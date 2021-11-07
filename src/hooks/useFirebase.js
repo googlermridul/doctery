@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, updateProfile } from "firebase/auth";
 import initializeAuthentication from "../firebase/firebaseInit";
 import { useEffect } from "react";
 
 initializeAuthentication()
 
 const useFirebase = () => {
+   const [name, setName] = useState('')
    const [email, setEmail] = useState('')
    const [password, setPassword] = useState('')
    const [user, setUser] = useState({})
@@ -18,6 +19,9 @@ const useFirebase = () => {
    }
    const getPassword = e => {
       setPassword(e.target.value);
+   }
+   const getName = e => {
+      setName(e.target.value);
    }
 
    const signUpWithEmail = () => {
@@ -36,6 +40,12 @@ const useFirebase = () => {
 
    const signInWithEmail = () => {
       return signInWithEmailAndPassword(auth, email, password)
+   }
+
+   const updateUserName = () => {
+      return updateProfile(auth.currentUser, {
+         displayName: name
+      })
    }
 
    const logOut = () => {
@@ -58,7 +68,7 @@ const useFirebase = () => {
    }, [auth])
    // error diche tai dependency add korchi
 
-   return {user, setUser, error, setError, signInWithGoogle, logOut, signUpWithEmail, getEmail, getPassword, signInWithEmail}
+   return {user, setUser, error, setError, signInWithGoogle, logOut, signUpWithEmail, getEmail, getPassword, getName, signInWithEmail, updateUserName}
 }
 
 export default useFirebase;
