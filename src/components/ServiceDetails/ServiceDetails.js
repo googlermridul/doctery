@@ -27,6 +27,7 @@ const ServiceDetails = () => {
                <div className="col-md-6">
                   <h5 className="name">{name}</h5>
                   <p className="description mb-0">{description}</p>
+                  <button className="universal-btn">MAKE AN APPOINTMENT</button>
                </div>
             </div>
          </div>

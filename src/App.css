@@ -15,6 +15,18 @@ body {
   text-decoration: none;
   font-size: 20px;
 }
+
+.universal-btn {
+  background: #2f2d52;
+  color: #fff;
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  padding-top: 5px;
+}
+
 /* ============================================ */
 .navbar {
   background: #fff;
@@ -34,12 +46,20 @@ body {
 .navbar .navbar-nav {
   margin-left: auto;
 }
-.navbar .nav-item .link {
+.navbar .nav-item .link,
+.navbar .nav-item span,
+.navbar .nav-item button {
   color: #000;
   text-decoration: none;
   margin: 0 25px;
   letter-spacing: 1px;
   transition: .4s;
+  font-size: 20px;
+}
+.navbar .nav-item button {
+  border: none;
+  background: none;
+  padding: 0;
 }
 .navbar .nav-item .link:hover {
   color: #2196f3;
@@ -131,10 +151,12 @@ body {
   color: #333;
   margin-bottom: 10px;
 }
-.service-box .btn {
+.service-box button {
   font-size: 22px;
   letter-spacing: 1px;
   color: #2196f3;
+  background: #fff;
+  border: none;
   margin: 0;
   padding: 0;
 }

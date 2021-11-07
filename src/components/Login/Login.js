@@ -1,8 +1,10 @@
 import React from 'react';
-import useFirebase from '../../hooks/useFirebase';
+import { useLocation } from 'react-router';
+import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
-   const {signInWithGoogle} = useFirebase()
+   const {signInWithGoogle} = useAuth()
+   const location = useLocation()
 
    return (
       <div style={{marginTop: "178px"}}>

@@ -41,7 +41,8 @@ const useFirebase = () => {
             console.log('inside state change', user);
          }
       });
-   }, [])
+   }, [auth])
+   // error diche tai dependency add korchi
 
    return {user, error, signInWithGoogle, logOut}
 }

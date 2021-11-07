@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
 import hamburger from '../../images/menu2.png'
 
 const Header = () => {
-   const {user, logOut} = useFirebase()
+   const {user, logOut} = useAuth()
 
    return (
       <nav className="navbar navbar-expand-md fixed-top shadow">
@@ -32,7 +32,7 @@ const Header = () => {
                   <li className="nav-item">
                      {
                         user.email ? 
-                        <button onClick={logOut} className="btn btn-primary btn-sm">LOGOUT</button> : 
+                        <button onClick={logOut}>LOGOUT</button> : 
                         <Link className="link" to="/login">LOGIN</Link>
                      }
                   </li>

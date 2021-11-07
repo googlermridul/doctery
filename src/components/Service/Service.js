@@ -18,7 +18,7 @@ const Service = ({service}) => {
             <div className="info">
                <h5 className="name">{name}</h5>
                <p className="description">{description.slice(0, 80)}</p>
-               <button onClick={() => handleDetails(id)} className="btn">Read More</button>
+               <button onClick={() => handleDetails(id)}>Read More</button>
             </div>
          </div>
       </div>
