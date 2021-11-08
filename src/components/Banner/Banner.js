@@ -7,13 +7,13 @@ const Banner = () => {
          <div className="banner-bg">
             <div className="container-fluid px-0">
                <div className="row justify-content-center align-items-center">
-                  <div className="col-md-6 mb-5 mb-md-0">
+                  <div className="col-lg-6 mb-5 mb-lg-0">
                      <div className="text-box">
                         <h1>GET BETTER CARE FOR YOUR <span>HEALTH</span></h1>
-                        <p>Maintaining good health should be the primary focus of everyone.</p>
+                        <h5>Maintaining good health should be the primary focus of everyone.</h5>
                      </div>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-lg-6">
                      <img className="img-fluid" src={banner} alt="" />
                   </div>
                </div>

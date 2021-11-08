@@ -43,7 +43,7 @@ const Login = () => {
                <div className="row">
                   <div className="col">
                      <div className="login-box shadow">
-                        <h2>Log in to Doctery</h2>
+                        <h3>Log in to Doctery</h3>
                         <form onSubmit={handleSignIn}>
                            <div className="form-group">
                               <input onBlur={getEmail} type="email" className="form-control shadow" id="email" aria-describedby="emailHelp" placeholder="Email" required />

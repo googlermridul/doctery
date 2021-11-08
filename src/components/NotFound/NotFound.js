@@ -1,9 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import notFound from '../../images/page_not_found.svg'
 
 const NotFound = () => {
    return (
-      <div className="mt-5 pt-5 text-center">
-         <h3>here is nothing for you fumk off</h3>
+      <div className="not-found">
+         <div className="container text-center">
+            <img className="img-fluid" src={notFound} alt="" />
+            <h3>Ohh! Page Not Found</h3>
+            <Link to="/home">Back to home</Link>
+         </div>
       </div>
    );
 };

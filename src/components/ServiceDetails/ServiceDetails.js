@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useServices from '../../hooks/useServices';
 
 const ServiceDetails = () => {
@@ -25,9 +25,11 @@ const ServiceDetails = () => {
                   <img className="img-fluid rounded" src={image} alt="" />
                </div>
                <div className="col-md-6">
-                  <h5 className="name">{name}</h5>
+                  <h3 className="name">{name}</h3>
                   <p className="description mb-0">{description}</p>
-                  <button className="universal-btn">MAKE AN APPOINTMENT</button>
+                  <button className="universal-btn">
+                     <Link className="link" to="/contact">Make an Appointment</Link>
+                  </button>
                </div>
             </div>
          </div>

@@ -29,9 +29,9 @@ function App() {
           <Route path="/services">
             <ServicePage />
           </Route>
-          <Route path="/about">
+          <PrivateRoute path="/about">
             <About />
-          </Route>
+          </PrivateRoute>
           <PrivateRoute path="/service/:serviceId">
             <ServiceDetails />
           </PrivateRoute>
@@ -41,9 +41,9 @@ function App() {
           <Route path="/register">
             <Register />
           </Route>
-          <Route path="/contact">
+          <PrivateRoute path="/contact">
             <Contact />
-          </Route>
+          </PrivateRoute>
           <Route path="*">
             <NotFound />
           </Route>

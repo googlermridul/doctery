@@ -9,7 +9,7 @@ const Feature = () => {
          <div className="container">
             <div className="header-text text-center">
                <h3>Our Special Features</h3>
-               <p>Discover Your Perfect Program In Our Courses.</p>
+               <p>Discover Your Perfect Program In Our Medical.</p>
             </div>
             <div className="row">
                <div className="col-md-4">
@@ -17,7 +17,7 @@ const Feature = () => {
                      <div className="icon shadow">
                         <img src={icon1} alt="" />
                      </div>
-                     <h5>Online Emergency</h5>
+                     <h4>Online Emergency</h4>
                      <p>A range of courses across gardening, <br /> photography and more.</p>
                   </div>
                </div>
@@ -26,7 +26,7 @@ const Feature = () => {
                      <div className="icon shadow icon2">
                         <img src={icon2} alt="" />
                      </div>
-                     <h5>Medication Service</h5>
+                     <h4>Medication Service</h4>
                      <p>Knowledge discovery that helps you <br /> understand any topic.</p>
                   </div>
                </div>
@@ -35,7 +35,7 @@ const Feature = () => {
                      <div className="icon shadow icon3">
                         <img src={icon3} alt="" />
                      </div>
-                     <h5>24hr Health Program</h5>
+                     <h4>24hr Health Program</h4>
                      <p>Experts delivered you the best support <br /> regarding your need.</p>
                   </div>
                </div>

@@ -16,7 +16,7 @@ const Service = ({service}) => {
          <div className="service-box shadow">
             <img className="img-fluid" src={image} alt="" />
             <div className="info">
-               <h5 className="name">{name}</h5>
+               <h4 className="name">{name}</h4>
                <p className="description">{description.slice(0, 80)}</p>
                <button onClick={() => handleDetails(id)}>Read More</button>
             </div>

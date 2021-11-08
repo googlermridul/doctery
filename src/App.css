@@ -5,9 +5,10 @@
 }
 
 body {
-  font-family: 'Heebo', sans-serif;
-  font-family: 'Teko', sans-serif !important;
-  font-size: 20px;
+  font-family: 'Rubik', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  color: #111 !important
 }
 .form-control:focus {
   background-color: #fff;
@@ -17,7 +18,26 @@ body {
 }
 .link {
   text-decoration: none;
-  font-size: 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Teko', sans-serif;
+  color: #2f2d52;
+}
+
+h1 {
+  font-size: 80px !important;
+}
+h2 {
+  font-size: 60px !important;
+}
+h3 {
+  font-size: 50px !important;
+}
+h4 {
+  font-size: 30px !important;
+}
+h5 {
+  font-size: 24px !important;
 }
 
 .universal-btn {
@@ -25,7 +45,6 @@ body {
   color: #fff;
   height: 50px;
   width: 200px;
-  font-size: 20px;
   border: none;
   border-radius: 30px;
   padding-top: 5px;
@@ -37,12 +56,8 @@ body {
   padding: 15px 0 !important;
 }
 .navbar .logo {
-  color: #2f2d52;
-  font-size: 40px;
+  font-size: 45px;
   margin-bottom: 0;
-}
-.navbar .logo span {
-  color: #fe9d3e;
 }
 .navbar .hamburger {
   padding-top: 10px;
@@ -53,12 +68,11 @@ body {
 .navbar .nav-item .link,
 .navbar .nav-item span,
 .navbar .nav-item button {
-  color: #000;
+  color: #111;
+  /* font-weight: 500; */
   text-decoration: none;
   margin: 0 25px;
-  letter-spacing: 1px;
   transition: .4s;
-  font-size: 20px;
 }
 .navbar .nav-item span {
   text-transform: uppercase;
@@ -113,6 +127,36 @@ body {
 
 
 
+/* ============================================ */
+.feature {
+  padding: 50px 0;
+  background: url(./images/download.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+.feature .header-text {
+  margin-bottom: 75px;
+}
+.feature-box {
+  text-align: center;
+}
+.feature-box .icon {
+  background: #fff;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  padding: 35px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.feature-box h5 {
+  margin-bottom: 10px;
+}
+.feature-box p {
+  margin-bottom: 0px;
+}
+
+
 /* ================================== */
 
 .service-section {
@@ -121,15 +165,13 @@ body {
   background-position: center;
   padding: 50px 0;
 }
-.service-section .header-text h3 {
+/* .service-section .header-text h3 {
   color: #273238;
   font-size: 50px;
 }
 .service-section .header-text p {
-  font-size: 20px;
-  letter-spacing: 1px;
   color: #273238
-}
+} */
 
 /* ================================== */
 
@@ -143,27 +185,22 @@ body {
   border-radius: 10px;
   margin-bottom: 15px;
   width: 100%;
-  /* height: 250px; */
 }
 .service-box .info {
   padding: 10px;
   text-align: center;
 }
 .service-box .name {
-  color: #2F2D51;
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-size: 30px;
 }
 .service-box .description {
-  font-size: 20px;
-  color: #333;
   margin-bottom: 10px;
 }
 .service-box button {
-  font-size: 22px;
-  letter-spacing: 1px;
   color: #2196f3;
+  font-family: 'Teko', sans-serif;
+  font-size: 20px;
   background: #fff;
   border: none;
   margin: 0;
@@ -177,15 +214,17 @@ body {
   margin-bottom: 100px;
 }
 .service-details .name {
-  color: #2F2D51;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 30px;
 }
-.service-details .description {
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 10px;
+.service-details .universal-btn {
+  margin-top: 30px;
+  padding: 10px;
+  height: 60px;
+}
+.service-details .universal-btn .link {
+  color: #fff;
 }
 /* ================================================================ */
 
@@ -194,12 +233,9 @@ body {
   margin-bottom: 100px;
 }
 .service-page .header-text h3 {
-  color: #273238;
-  font-size: 60px;
   font-weight: 600;
 }
 .service-page .header-text p {
-  font-size: 20px;
   color: #273238
 }
 /* ================================================================ */
@@ -227,56 +263,11 @@ body {
   font-weight: 600;
 }
 .about .text-box p {
-  font-size: 20px;
   color: #273238
 }
 .about .text-box ul li {
-  font-size: 20px;
   color: #273238;
   margin-top: 15px;
-}
-
-
-/* ============================================ */
-.feature {
-  padding: 50px 0;
-  background: url(./images/download.png);
-  background-repeat: no-repeat;
-  background-position: center left;
-}
-.feature .header-text {
-  margin-bottom: 75px;
-}
-.feature .header-text h3 {
-  color: #273238;
-  font-size: 50px;
-}
-.feature .header-text p {
-  font-size: 20px;
-  letter-spacing: 1px;
-  color: #273238
-}
-.feature-box {
-  text-align: center;
-}
-.feature-box .icon {
-  background: #fff;
-  width: 120px;
-  height: 120px;
-  border-radius: 100px;
-  padding: 35px;
-  margin: auto;
-  margin-bottom: 50px;
-}
-.feature-box h5 {
-  color: #2F2D51;
-  margin-bottom: 10px;
-  font-size: 30px;
-}
-.feature-box p {
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 10px;
 }
 
 /* ================================================================ */
@@ -291,17 +282,15 @@ body {
   padding: 200px 0 100px 0;
   overflow: hidden;
 }
-.login .login-box h2 {
-  font-size: 50px;
+.login .login-box h3 {
   color: #273238;
   margin-bottom: 30px;
-  font-weight: 600;
 }
 .login .login-box {
   padding: 30px;
   background: #fff;
   border-radius: 20px;
-  width: 500px;
+  max-width: 500px;
   margin: auto;
 }
 .login .login-box hr {
@@ -317,7 +306,6 @@ body {
 .login .login-box .form-control {
   border: none;
   color: #333;
-  font-size: 20px;
   height: 60px;
   border-radius: 30px;
   padding: 30px;
@@ -343,7 +331,6 @@ body {
   padding-right: 5px;
 }
 .login .login-box .switcher {
-  font-size: 20px;
   margin-bottom: 0;
   margin-top: 15px;
 }
@@ -358,23 +345,21 @@ body {
   background: url(./images/overlay2.png);
   background-position: top left;
   background-size: cover;
-  
   position: relative;
   padding: 200px 0 100px 0;
   overflow: hidden;
 }
-.contact .text-box {
+.contact .contact-box {
   color: #273238;
   z-index: 100000;
   overflow: hidden;
   padding-right: 302px;
 }
-.contact .text-box h2 {
+.contact .contact-box h2 {
   font-size: 60px;
   font-weight: 600;
 }
-.contact .text-box p {
-  font-size: 20px;
+.contact .contact-box p {
   color: #273238
 }
 .contact .form-group {
@@ -382,12 +367,10 @@ body {
 }
 .contact .form-group label {
   color: #273238;
-  font-size: 20px;
   margin-bottom: 10px;
 }
 .contact .form-group input {
   color: #333;
-  font-size: 20px;
   height: 60px;
   border-radius: 30px;
   padding: 30px;
@@ -395,7 +378,6 @@ body {
 .contact .form-group input {
   border: none;
   color: #333;
-  font-size: 20px;
   height: 60px;
   border-radius: 30px;
   padding: 30px;
@@ -406,7 +388,6 @@ body {
 }
 .contact .form-group textarea {
   color: #333;
-  font-size: 20px;
   height: 180px;
   border-radius: 30px;
   padding: 30px;
@@ -420,7 +401,6 @@ body {
   color: #fff !important;
   width: 50%;
   height: 60px;
-  font-size: 20px !important;
   border: none !important;
   border-radius: 30px;
   padding-top: 5px;
@@ -441,22 +421,96 @@ body {
 }
 .footer .logo {
   color: #2f2d52;
-  font-size: 40px;
-}
-.footer h6 {
-  margin-top: 27px;
-  font-size: 24px;
+  font-size: 45px;
   margin-bottom: 30px;
 }
+.footer h5 {
+  margin-bottom: 30px;
+  margin-top: 22px;
+}
 .footer p {
-  font-size: 20px;
-  color: #77838F;
+  color: #273238;
 }
 .footer .nav-item {
   margin-bottom: 10px;
 }
 .footer .link {
-  font-size: 20px;
-  color: #77838F;
+  color: #273238;
   margin-bottom: 25px;
 }
+
+
+.not-found {
+  margin-top: 178px;
+}
+.not-found img {
+  margin-bottom: 50px;
+  max-width: 500px;
+}
+.not-found h3 {
+  margin-bottom: 30px;
+}
+.not-found p {
+  color: #77838F;
+}
+
+
+/* media queries */
+@media (max-width: 1600px) {
+  .banner .text-box {
+    padding-left: 152px;
+  }
+  .about .text-box,
+  .contact .contact-box {
+    padding-right: 152px;
+  }
+}
+@media (max-width: 1400px) {
+  .banner .text-box {
+    padding-left: 52px;
+  }
+  .about .text-box,
+  .contact .contact-box {
+    padding-right: 52px;
+  }
+}
+@media (max-width: 1366px) {
+  .banner .text-box {
+    padding-left: 125px;
+  }
+  .about .text-box,
+  .contact .contact-box {
+    padding-right: 125px;
+  }
+}
+
+  @media (max-width: 992px) {
+  .navbar .navbar-nav .nav-item {
+    text-align: center;
+    margin: 15px 0;
+  }
+  .login .login-box {
+    padding: 15px;
+  }
+  .banner .text-box,
+  .about .text-box,
+  .contact .contact-box {
+    padding: 0 15px;
+  }
+}
+
+/* @media (min-width: 1400px)
+    max-width: 1320
+}
+@media (min-width: 1200px)
+    max-width: 1140
+}
+@media (min-width: 992px)
+    max-width: 960
+}
+@media (min-width: 768px)
+    max-width: 720
+}
+@media (min-width: 576px)
+    max-width: 540
+} */

@@ -11,16 +11,16 @@ const Footer = () => {
                <div className="row">
                   <div className="col-sm-6 col-lg-3">
                      <h3 className="logo">Doctery</h3>
-                     <p>Skola is an educational site which gives various courses regarding your need. It provides more than 500 international courses to prove your skills.</p>
+                     <p>Doctery is an medical site which gives various medical treatment regarding your need. It provides more than 500 international services to improve your health.</p>
                   </div>
                   <div className="col-sm-6 col-lg-3">
-                     <h6>Useful Links</h6>
+                     <h5>Useful Links</h5>
                      <ul className="navbar-nav">
                         <li className="nav-item">
                            <Link className="link" to="/home">Home</Link>
                         </li>
                         <li className="nav-item">
-                           <Link className="link" to="/courses">Courses</Link>
+                           <Link className="link" to="/services">Services</Link>
                         </li>
                         <li className="nav-item">
                            <Link className="link" to="/about">About Us</Link>
@@ -31,7 +31,7 @@ const Footer = () => {
                      </ul>
                   </div>
                   <div className="col-sm-6 col-lg-3">
-                     <h6>Contact Us</h6>
+                     <h5>Contact Us</h5>
                      <p>329 Queensberry Street, <br /> North Melbourne VIC 3051, Australia.</p>
                      <p>1900 654 321</p>
                      <p>support@skola.com</p>

@@ -44,7 +44,7 @@ const Register = () => {
                <div className="row">
                   <div className="col">
                      <div className="login-box shadow">
-                        <h2>Sign in to Doctery</h2>
+                        <h3>Sign in to Doctery</h3>
                         <form onSubmit={handleRegistration}>
                            <div className="form-group">
                               <input onBlur={getName} type="name" className="form-control shadow" placeholder="Full Name" required />

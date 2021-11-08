@@ -8,7 +8,7 @@ const ServicePage = () => {
    return (
       <div className="service-page">
          <div className="container">
-            <div className="header-text text-center mb-5">
+            <div className="header-text text-center">
                <h3>Our Medical Services</h3>
                <p>Serve the community by improving the quality of life through better health.</p>
             </div>
