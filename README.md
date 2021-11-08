@@ -2,5 +2,17 @@
 
 ### Live Link: https://docteryyy.web.app/
 
-### About Doctery:
-Doctery is a health care institution providing patient treatment with specialized medical and nursing staff and medical equipment. The best-known type of this hospital is general hospital, which typically has an emergency department to treat urgent health problems ranging from fire and accident victims to a sudden illness. Especially Doctery provide the major health care facility in its region, with many beds for intensive care and additional beds for patients who need long-term care.
+### What Doctery Provides:
+Doctery is a health care center which provide patient treatment with specialized medical and nursing staff and medical equipment. The best-known type of hospital is the general hospital, which typically has an emergency department to treat health problems. This hospital treats various diseases including kidney disease, orthopaedics, dental problem, gastritis and heart attack etc. Doctery are always ready to provide you the best health treatment.
+
+### About this prjoect:
+
+* Doctery is a health care related website.
+* This site is made by react with firebase authentication system.
+* Here you will find all kinds of medical services in the service section.
+* You can expolre hospital services but you should create an account here.
+* You can make an appointment in advance for medical services.
+
+### Project Screenshot:
+
+<img src="https://i.ibb.co/mFcm3KL/screencapture-localhost-3000-home-2021-11-08-21-35-16.png" alt="doctery googlermridul" border="0">

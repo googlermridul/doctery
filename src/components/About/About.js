@@ -15,11 +15,11 @@ const About = () => {
                      <div className="col-lg-6">
                         <div className="text-box">
                            <h2>We Are Specialize in Medical Diagnositics</h2>
-                           <p>Nulla lacinia sapien a diam ullamcorper, sed congue leo vulputate. Phasellus et ante ultrices, sagittis purus vitae, sagittis quam. Quisque urna lectus, auctor quis tristique tincidunt, semper vel lectus. Mauris eget eleifend massa. Praesent ex felis, laoreet nec tellus in, laoreet commodo ipsum.</p>
+                           <p>Our goal is to deliver quality of care in a courteous, respectful, and compassionate manner. We hope you will allow us to care for you and strive to be the first and best choice for your family healthcare</p>
                            <ul>
-                              <li>Pellentesque placerat, nisi congue vehicula efficitur.</li>
-                              <li>Pellentesque placerat, nisi congue vehicula efficitur.</li>
-                              <li>Phasellus mattis vitae magna in suscipit. Nam tristique posuere sem, mattis molestie est bibendum.</li>
+                              <li>We provide patient treatment with specialized medical and nursing staff and medical equipment.</li>
+                              <li>We treats various diseases including kidney disease, orthopaedics, dental problem, gastritis and heart attack etc.</li>
+                              <li>Doctery are always ready to provide you the best health treatment.</li>
                            </ul>
                         </div>
                      </div>

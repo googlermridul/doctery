@@ -13,6 +13,7 @@ import Contact from './components/Contact/Contact';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Register from './components/Register/Register';
+import Appointment from './components/Appointment/Appointment';
 
 function App() {
   return (
@@ -41,8 +42,11 @@ function App() {
           <Route path="/register">
             <Register />
           </Route>
-          <PrivateRoute path="/contact">
+          <Route path="/contact">
             <Contact />
+          </Route>
+          <PrivateRoute path="/appointment">
+            <Appointment />
           </PrivateRoute>
           <Route path="*">
             <NotFound />

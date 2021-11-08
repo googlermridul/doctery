@@ -28,7 +28,7 @@ const ServiceDetails = () => {
                   <h3 className="name">{name}</h3>
                   <p className="description mb-0">{description}</p>
                   <button className="universal-btn">
-                     <Link className="link" to="/contact">Make an Appointment</Link>
+                     <Link className="link" to="/appointment">Make an Appointment</Link>
                   </button>
                </div>
             </div>

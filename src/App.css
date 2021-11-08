@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Rubik', sans-serif !important;
   font-size: 15px !important;
@@ -23,7 +22,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Teko', sans-serif;
   color: #2f2d52;
 }
-
 h1 {
   font-size: 80px !important;
 }
@@ -39,7 +37,6 @@ h4 {
 h5 {
   font-size: 24px !important;
 }
-
 .universal-btn {
   background: #2f2d52;
   color: #fff;
@@ -50,7 +47,7 @@ h5 {
   padding-top: 5px;
 }
 
-/* ============================================ */
+/* header */
 .navbar {
   background: #fff;
   padding: 15px 0 !important;
@@ -69,7 +66,6 @@ h5 {
 .navbar .nav-item span,
 .navbar .nav-item button {
   color: #111;
-  /* font-weight: 500; */
   text-decoration: none;
   margin: 0 25px;
   transition: .4s;
@@ -91,9 +87,7 @@ h5 {
   box-shadow: 0 0 0 0rem !important;
 }
 
-
-/* ============================================ */
-
+/* banner */
 .banner {
   background: #fff;
 }
@@ -125,9 +119,7 @@ h5 {
   color: #273238
 }
 
-
-
-/* ============================================ */
+/* feature */
 .feature {
   padding: 50px 0;
   background: url(./images/download.png);
@@ -156,25 +148,13 @@ h5 {
   margin-bottom: 0px;
 }
 
-
-/* ================================== */
-
+/* service section */
 .service-section {
   background: url(./images/overlay2.png);
   background-size: cover;
   background-position: center;
   padding: 50px 0;
 }
-/* .service-section .header-text h3 {
-  color: #273238;
-  font-size: 50px;
-}
-.service-section .header-text p {
-  color: #273238
-} */
-
-/* ================================== */
-
 .service-box {
   background: #fff;
   border-radius: 10px;
@@ -207,8 +187,7 @@ h5 {
   padding: 0;
 }
 
-/* ================================================================ */
-
+/* service details */
 .service-details {
   margin-top: 178px;
   margin-bottom: 100px;
@@ -226,8 +205,8 @@ h5 {
 .service-details .universal-btn .link {
   color: #fff;
 }
-/* ================================================================ */
 
+/* service page */
 .service-page {
   margin-top: 178px;
   margin-bottom: 100px;
@@ -238,8 +217,8 @@ h5 {
 .service-page .header-text p {
   color: #273238
 }
-/* ================================================================ */
 
+/* about */
 .about {
   background: #fff;
 }
@@ -270,8 +249,7 @@ h5 {
   margin-top: 15px;
 }
 
-/* ================================================================ */
-
+/* login & register */
 .login {
   background: #fff;
 }
@@ -335,9 +313,7 @@ h5 {
   margin-top: 15px;
 }
 
-
-/* ================================================================ */
-
+/* contact & appointment */
 .contact {
   background: #fff;
 }
@@ -346,8 +322,17 @@ h5 {
   background-position: top left;
   background-size: cover;
   position: relative;
-  padding: 200px 0 100px 0;
+  padding: 50px 0;
   overflow: hidden;
+}
+.appointment-bg {
+  padding: 200px 0 100px 0;
+}
+.contact .header-text {
+  margin-bottom: 30px;
+}
+.appointment .header-text {
+  margin-bottom: 30px;
 }
 .contact .contact-box {
   color: #273238;
@@ -369,18 +354,13 @@ h5 {
   color: #273238;
   margin-bottom: 10px;
 }
-.contact .form-group input {
-  color: #333;
-  height: 60px;
-  border-radius: 30px;
-  padding: 30px;
-}
-.contact .form-group input {
+.contact .form-group input,
+.contact .form-group select {
   border: none;
-  color: #333;
+  color: #666;
   height: 60px;
   border-radius: 30px;
-  padding: 30px;
+  padding: 20px;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 .contact .form-group input:focus {
@@ -390,12 +370,10 @@ h5 {
   color: #333;
   height: 180px;
   border-radius: 30px;
-  padding: 30px;
+  padding: 20px;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
   border: none;
 }
-
-
 .submit-btn {
   background: #2f2d52;
   color: #fff !important;
@@ -405,8 +383,8 @@ h5 {
   border-radius: 30px;
   padding-top: 5px;
 }
-/* ============================================ */
 
+/* footer */
 .footer {
   background: url(./images/footer-layer.png);
   background-repeat: no-repeat;
@@ -422,10 +400,10 @@ h5 {
 .footer .logo {
   color: #2f2d52;
   font-size: 45px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .footer h5 {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   margin-top: 22px;
 }
 .footer p {
@@ -438,8 +416,14 @@ h5 {
   color: #273238;
   margin-bottom: 25px;
 }
+.footer .fa-icon {
+  color: #2f2d52;
+  width: 15px;
+  margin-right: 10px;
+  margin-top: 3px;
+}
 
-
+/* not found */
 .not-found {
   margin-top: 178px;
 }
@@ -453,7 +437,6 @@ h5 {
 .not-found p {
   color: #77838F;
 }
-
 
 /* media queries */
 @media (max-width: 1600px) {
@@ -483,8 +466,7 @@ h5 {
     padding-right: 125px;
   }
 }
-
-  @media (max-width: 992px) {
+@media (max-width: 992px) {
   .navbar .navbar-nav .nav-item {
     text-align: center;
     margin: 15px 0;
@@ -498,19 +480,14 @@ h5 {
     padding: 0 15px;
   }
 }
-
-/* @media (min-width: 1400px)
-    max-width: 1320
+@media (max-width: 576px) {
+  h1 {
+    font-size: 60px !important;
+  }
+  h2 {
+    font-size: 50px !important;
+  }
+  h3 {
+    font-size: 40px !important;
+  }
 }
-@media (min-width: 1200px)
-    max-width: 1140
-}
-@media (min-width: 992px)
-    max-width: 960
-}
-@media (min-width: 768px)
-    max-width: 720
-}
-@media (min-width: 576px)
-    max-width: 540
-} */

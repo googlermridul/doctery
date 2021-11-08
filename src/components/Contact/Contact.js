@@ -13,8 +13,10 @@ const Contact = () => {
                   <div className="col-lg-6">
                      <div className="contact-box">
                         <div className="px-lg-3">
-                           <h2>Get In Touch</h2>
-                           <p>Nulla lacinia sapien a diam ullamcorper, sed congue leo vulputate.</p>
+                           <div className="header-text">
+                              <h3>Get In Touch</h3>
+                              <p>Feel free to contact us.</p>
+                           </div>
                            <form action="">
                               <div className="form-group">
                                  <input type="text" className="form-control" placeholder="Name" />
@@ -23,7 +25,7 @@ const Contact = () => {
                                  <input type="email" className="form-control" placeholder="Email" />
                               </div>
                               <div className="form-group">
-                                 <textarea className="form-control" cols="30" rows="3" placeholder="Content"></textarea>
+                                 <textarea className="form-control" cols="30" rows="3" placeholder="Describe"></textarea>
                               </div>
                               <div className="form-group mb-0">
                                  <button className="submit-btn">SEND</button>

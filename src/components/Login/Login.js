@@ -5,7 +5,7 @@ import useAuth from '../../hooks/useAuth';
 import googleIcon from '../../images/google1.png'
 
 const Login = () => {
-   const {signInWithGoogle, setUser, setError, signInWithEmail, getEmail, getPassword, error} = useAuth()
+   const {setUser, error, setError, signInWithGoogle, signInWithEmail, getEmail, getPassword} = useAuth()
    const location = useLocation()
    const history = useHistory()
    const redirectUrl = location.state?.from || '/'
