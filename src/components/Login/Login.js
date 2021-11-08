@@ -5,18 +5,20 @@ import useAuth from '../../hooks/useAuth';
 import googleIcon from '../../images/google1.png'
 
 const Login = () => {
-   const {setUser, error, setError, signInWithGoogle, signInWithEmail, getEmail, getPassword} = useAuth()
+   const {setUser, error, setError, setIsLoading, signInWithGoogle, signInWithEmail, getEmail, getPassword} = useAuth()
    const location = useLocation()
    const history = useHistory()
    const redirectUrl = location.state?.from || '/'
 
    const handleGoogleSignIn = () => {
+      setIsLoading(true)
       signInWithGoogle()
       .then(res => {
          setUser(res.user)
          setError('');
          history.push(redirectUrl)
       })
+      .finally(() => setIsLoading(false))
       .catch(err => {
          setError(err.message);
          // console.log(err.message);

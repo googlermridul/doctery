@@ -26,7 +26,7 @@ const Footer = () => {
                            <Link className="link" to="/about">About Us</Link>
                         </li>
                         <li className="nav-item">
-                           <Link className="link" to="/contact">Contact</Link>
+                           <Link className="link" to="/appointment">Appointment</Link>
                         </li>
                      </ul>
                   </div>
@@ -34,22 +34,22 @@ const Footer = () => {
                      <h5>Services</h5>
                      <ul className="navbar-nav">
                         <li className="nav-item">
-                           <Link className="link" to="/service/1">Cardiology</Link>
+                           <Link className="link" to="/service">Cardiology</Link>
                         </li>
                         <li className="nav-item">
-                           <Link className="link" to="/service/2">Urology</Link>
+                           <Link className="link" to="/service">Urology</Link>
                         </li>
                         <li className="nav-item">
-                           <Link className="link" to="/service/3">Neurology</Link>
+                           <Link className="link" to="/service">Neurology</Link>
                         </li>
                         <li className="nav-item">
-                           <Link className="link" to="/service/4">Orthopaedics</Link>
+                           <Link className="link" to="/service">Orthopaedics</Link>
                         </li>
                         <li className="nav-item">
-                           <Link className="link" to="/service/5">Gastroenterology</Link>
+                           <Link className="link" to="/service">Gastroenterology</Link>
                         </li>
                         <li className="nav-item">
-                           <Link className="link" to="/service/6">Dentistry</Link>
+                           <Link className="link" to="/service">Dentistry</Link>
                         </li>
                      </ul>
                   </div>
