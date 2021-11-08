@@ -14,11 +14,12 @@ const Login = () => {
       signInWithGoogle()
       .then(res => {
          setUser(res.user)
+         setError('');
          history.push(redirectUrl)
       })
       .catch(err => {
          setError(err.message);
-         console.log(err.message);
+         // console.log(err.message);
       });
    }
 
@@ -28,11 +29,12 @@ const Login = () => {
       signInWithEmail()
       .then(res => {
          setUser(res.user)
+         setError('');
          history.push(redirectUrl)
       })
       .catch(err => {
          setError(err.message);
-         console.log(err.message);
+         // console.log(err.message);
       });
    }
 

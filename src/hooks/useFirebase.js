@@ -24,6 +24,10 @@ const useFirebase = () => {
       if (password.length < 6) {
          setError('Password should be at least 6 characters')
       }
+      // if (!/^(?=.*[0-9]).*$/.test(password)) {
+      //    setError('Password must contain at least one digit')
+      //    return;
+      // }
       return createUserWithEmailAndPassword(auth, email, password)
    }
 
@@ -67,11 +71,4 @@ const useFirebase = () => {
    return {getName, user, setUser, error, setError, getEmail, getPassword, signInWithGoogle, signInWithEmail, signUpWithEmail, logOut, updateUserName}
 }
 
-export default useFirebase;
-
-
-
-
-      // if (!/^(?=.*[0-9]).*$/.test(password)) {
-      //    setError('Password must contain at least one digit')
-      // }
+export default useFirebase;      
